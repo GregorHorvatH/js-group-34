@@ -73,11 +73,45 @@
 // console.log('goToTheMovie:', goToTheMovie);
 
 // ========= Получение данных - prompt =========
-const age = prompt('How old are you?');
-console.log('age:', age);
+// const age = prompt('How old are you?');
+// const num = Number(age);
 
-if (age >= 18) {
-  console.log('you can buy ticket to this movie');
-} else {
-  console.log('you CAN`T go to this movie');
-}
+// console.log('age:', age);
+// console.log('age:', num);
+// console.log(typeof num);
+
+// if (age >= 18) {
+//   console.log('you can buy ticket to this movie');
+// } else {
+//   console.log('you CAN`T go to this movie');
+// }
+
+// ========= function =========
+// function sum(a, b) {
+//   // console.log('sum:', a + b);
+
+//   return a + b;
+// }
+
+// const x1 = sum(1, 2);
+
+// console.log(x1 * 2);
+
+// // sum(14, 22);
+// // sum(4, 4);
+
+// ============ indexOf ============
+//              0        1        2
+// const arr = ['Bobby', 'Peter', 'John'];
+// console.log(arr.indexOf('John')); // 2
+
+// console.log(arr.indexOf('sdfsfgs') > -1);
+
+// ============ includes ============
+// console.log(arr.includes('John')); // true
+// console.log(arr.includes('Ralph')); // false
+//           012345678901234567890123456789
+// const str = 'определяет, содержит ли массив некоторый элемент';
+// console.log(str);
+// console.log(str.includes('массив'));
+// console.log(str.indexOf('массив'));
