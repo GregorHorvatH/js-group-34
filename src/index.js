@@ -51,81 +51,81 @@ function LegacyAnimal(name) {
 // console.log(strelka);
 
 // ========= Car =========
-class Car {
-  #speed = 0;
-  #isOn = false;
+// class Car {
+//   #speed = 0;
+//   #isOn = false;
 
-  static sum(a, b) {
-    return a + b;
-  }
+//   static sum(a, b) {
+//     return a + b;
+//   }
 
-  constructor({ maxSpeed = 0 }) {
-    this.maxSpeed = maxSpeed;
-    // this.speed = 0;
-    // this.isOn = false;
-  }
+//   constructor({ maxSpeed = 0 }) {
+//     this.maxSpeed = maxSpeed;
+//     // this.speed = 0;
+//     // this.isOn = false;
+//   }
 
-  turnOn() {
-    this.isOn = true;
-  }
+//   turnOn() {
+//     this.isOn = true;
+//   }
 
-  turnOff() {
-    this.isOn = false;
-  }
+//   turnOff() {
+//     this.isOn = false;
+//   }
 
-  setSpeed(value) {
-    if (value <= this.maxSpeed) {
-      this.#speed = value;
-    } else {
-      this.#speed = this.maxSpeed;
-    }
-  }
+//   setSpeed(value) {
+//     if (value <= this.maxSpeed) {
+//       this.#speed = value;
+//     } else {
+//       this.#speed = this.maxSpeed;
+//     }
+//   }
 
-  get speed() {
-    return this.#speed;
-  }
+//   get speed() {
+//     return this.#speed;
+//   }
 
-  set speed(value) {
-    if (value <= this.maxSpeed) {
-      this.#speed = value;
-    } else {
-      this.#speed = this.maxSpeed;
-    }
-  }
+//   set speed(value) {
+//     if (value <= this.maxSpeed) {
+//       this.#speed = value;
+//     } else {
+//       this.#speed = this.maxSpeed;
+//     }
+//   }
 
-  get isOn() {
-    return this.#isOn;
-  }
+//   get isOn() {
+//     return this.#isOn;
+//   }
 
-  set isOn(value) {
-    if (typeof value === 'boolean') {
-      this.#isOn = value;
-    }
-  }
-}
+//   set isOn(value) {
+//     if (typeof value === 'boolean') {
+//       this.#isOn = value;
+//     }
+//   }
+// }
 
-const car1 = new Car({ maxSpeed: 100 });
-console.log(car1);
-
-car1.turnOn();
-console.log(car1);
-
-// // car1.setSpeed(88);
-// // console.log(car1);
-
-// car1.speed = 200;
-// console.log(car1.speed);
-
-// car1.isOn = 34567;
+// const car1 = new Car({ maxSpeed: 100 });
 // console.log(car1);
 
-class BMW extends Car {}
+// car1.turnOn();
+// console.log(car1);
 
-const bmw1 = new BMW({ maxSpeed: 300 });
-bmw1.speed = 200;
-console.log(bmw1);
+// // // car1.setSpeed(88);
+// // // console.log(car1);
 
-console.log(Car.sum(1, 1));
+// // car1.speed = 200;
+// // console.log(car1.speed);
+
+// // car1.isOn = 34567;
+// // console.log(car1);
+
+// class BMW extends Car {}
+
+// const bmw1 = new BMW({ maxSpeed: 300 });
+// bmw1.speed = 200;
+// console.log(bmw1);
+
+// console.log(Car.sum(1, 1));
 
 // ========== Прототип ==========
 // const animal = { eats: true };
@@ -166,3 +166,30 @@ console.log(Car.sum(1, 1));
 
 // strelka.walk();
 // animal1.walk();
+
+// ======== unique =========
+// function getUniqueValues(text) {
+//   return text
+//     .toUpperCase()
+//     .split('')
+//     .filter((value, idx, arr) => arr.indexOf(value) === idx);
+// }
+
+// console.log(getUniqueValues('AAAaBBBCCC'));
+
+// ======== pairs =========
+// function solution(str) {
+//   const result = [];
+
+//   for (let i = 0; i < str.length; i += 2) {
+//     const s1 = str[i];
+//     const s2 = str[i + 1] || '_';
+
+//     result.push(`${s1}${s2}`);
+//   }
+
+//   console.log(result);
+// }
+
+// solution('abc'); // should return ['ab', 'c_']
+// solution('abcdef'); // should return ['ab', 'cd', 'ef']
